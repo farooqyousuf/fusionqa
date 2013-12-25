@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Measure Template - Features Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/theme.css">
+    <link rel="stylesheet" type="text/css" href="css/external-pages.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <a href="#" class="scrolltop">
+        <span>up</span>
+    </a>
+    <!-- begins navbar -->
+	<div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+    		<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+          	</a>
+          	<a class="brand" href="/">
+				<%= image_tag "logo.png" %>
+            </a>
+		  	<div class="nav-collapse collapse">
+                <ul class="nav pull-right">
+					<li><%= link_to 'About Us', page_path('about') %><li>					
+					<li><%= link_to 'Services', page_path('services') %><li>	
+					<li><%= link_to 'Blog', page_path('blog') %><li>					
+					<li><%= link_to 'Hire Us', page_path('hire') %><li>	
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            External Pages
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="features.html">Features</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="coming-soon.html">Coming Soon</a></li>
+                            <li><a href="aboutus.html">About us</a></li>
+                            <li><a href="contact.html">Contact us</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+	        </div>
+        </div>
+      </div>
+    </div>
+    <!-- ends navbar -->
+
+    <!-- features -->
+    <div id="features" class="features_page">
+        <div class="container">
+            <div class="features1">
+                <!-- header -->
+                <h2 class="section_header">
+                    <hr class="left visible-desktop">
+                    <span>Services</span>
+                    <hr class="right visible-desktop">
+                </h2>
+
+                <div class="row">
+                    <div class="span12">
+                        <h3 class="intro">
+							We help our clients build out full automation test suites for their web and mobile 							   applications.
+						</h3>
+                    </div>
+                </div>
+
+                <!-- feature list -->
+                <div class="row">
+                    <div class="span4 feature">
+						<%= image_tag "feature1.jpg", :class => "thumb" %>
+                        <h3>
+                            Automation Test Suites
+                        </h3>
+                        <p class="description">
+                            There are many variations of passages of Lorem Ipsum available, but the 
+                            majority have suffered alteration in some form, by injected humour, or randomised 
+                            words which don't look even slightly believable.
+                        </p>
+                    </div>
+                    <div class="span4 feature">
+						<%= image_tag "feature1.jpg", :class => "thumb" %>
+                        <h3>
+                            <i class="i_chart"></i>Reporting
+                        </h3>
+                        <p class="description">
+                            There are many variations of passages of Lorem Ipsum available, but the 
+                            majority have suffered alteration in some form, by injected humour, or randomised 
+                            words which don't look even slightly believable.
+                        </p>
+                    </div>
+                    <div class="span4 feature">
+						<%= image_tag "feature1.jpg", :class => "thumb" %>
+                        <h3>
+                            <i class="i_movil"></i>Bug Free
+                        </h3>
+                        <p class="description">
+                            There are many variations of passages of Lorem Ipsum available, but the 
+                            majority have suffered alteration in some form, by injected humour, or randomised 
+                            words which don't look even slightly believable.
+                        </p>
+                    </div>
+					
+                </div>
+            </div>
+            <div class="features2">
+                <!-- features 2 -->
+                <h2 class="section_header">
+                    <hr class="left visible-desktop">
+                    <span>Automation Tools</span>
+                    <hr class="right visible-desktop">
+                </h2>
+				
+                <div class="row">
+                    <div class="span12">
+                        <h3 class="intro">
+                            We use a variety of awesome open-source automation tools.
+                        </h3>
+                    </div>
+                </div>
+				
+                <div class="row">
+                    
+						<div class="span4 feature2">
+								<div class="media">
+									<%= image_tag "selenium.png", :class => "media-object" %>
+									<div class="media-body">
+								    <h4 class="media-heading">Selenium</h4>
+	                        <p>
+	                            The browser driver we use to emulate just as a real person would use the application.
+	                        </p>
+								</div>
+							</div>
+	                    </div>
+					
+						<div class="span4 feature2">
+								<div class="media">
+									<%= image_tag "cucumber.png", :class => "media-object" %>
+									<div class="media-body">
+								    <h4 class="media-heading">Cucumber</h4>
+	                        <p>
+								Cucumber helps us to write out our features and scenarios in plain English to make sure we've covered all possible test cases.
+	                        </p>
+								</div>
+							</div>
+	                    </div>
+					
+						<div class="span4 feature2">
+								<div class="media">
+									<%= image_tag "capybara.png", :class => "media-object" %>
+									<div class="media-body">
+								    <h4 class="media-heading">Capybara</h4>
+	                        <p>
+								With Capybara we write clean and precise code to instruct the drivers what to do.
+	                        </p>
+								</div>
+							</div>
+	                    </div>
+					
+					</div>
+					
+	                <div class="row">
+                    
+							<div class="span4 feature2">
+									<div class="media">
+										<%= image_tag "phantomjs.png", :class => "media-object" %>
+										<div class="media-body">
+									    <h4 class="media-heading">PhantomJS</h4>
+		                        <p>
+									This driver is used to run our automation tests headlessly. Scary!
+		                        </p>
+									</div>
+								</div>
+		                    </div>
+					
+							<div class="span4 feature2">
+									<div class="media">
+										<%= image_tag "saucelabs.png", :class => "media-object" %>
+										<div class="media-body">
+									    <h4 class="media-heading">SauceLabs</h4>
+		                        <p>
+									SauceLabs is great to make sure we've covered all the possible testing environments.
+		                        </p>
+									</div>
+								</div>
+		                    </div>
+					
+							<div class="span4 feature2">
+									<div class="media">
+										<%= image_tag "appium.png", :class => "media-object" %>
+										<div class="media-body">
+									    <h4 class="media-heading">Appium</h4>
+		                        <p>
+									Appium is awesome at testing native mobile apps.
+		                        </p>
+									</div>
+								</div>
+		                    </div>
+					
+					</div>
+			
+            </div>
+        </div>
+    </div>
+
+   
+
+    <!-- starts footer -->
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="span8">
+                    <h3>From the Blog</h3>
+                    <div class="blog_post">
+                        <div class="row">
+                            <div class="span2">
+                                <a href="blog.html">
+                                    <img src="img/pic_blog.png" alt="post image" class="img-circle" />
+                                </a>
+                            </div>
+                            <div class="span4">
+                                <a href="blog.html" class="title">
+                                    Lorem Ipsum is simply dummy 
+                                </a>
+                                <div class="intro">
+                                    There are many variations of passages of Lorem alteration in some form by injected look even slightly believable.
+                                </div>
+                                <div class="date">
+                                    Oct 22. 2012
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="span4 contact_us">
+                    <h3>Contact Us</h3>
+                    <form class="form-horizontal">
+                        <div class="field">
+                            <div class="label_field">
+                                <label for="inputName">Name</label>
+                            </div>
+                            <input type="text" id="inputName" />
+                        </div>
+
+                        <div class="field">
+                            <div class="label_field">
+                                <label for="inputEmail">Email</label>
+                            </div>
+                            <input type="text" id="inputEmail" />
+                        </div>
+
+                        <div class="field">
+                            <div class="label_field">
+                                <label for="inputCity">City</label>
+                            </div>
+                            <input type="text" id="inputCity" />
+                        </div>
+
+                        <div class="field">
+                            <div class="label_field">
+                                <label for="inputComment">Comments</label>
+                            </div>
+                            <textarea name="comments"></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send</button>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="row copyright">
+                <div class="span5">
+                    <h3>Social</h3>
+                    <a href="#" class="social fb">
+                        <i class="i_facebook"></i>
+                    </a>
+                    <a href="#" class="social tw">
+                        <i class="i_twitter"></i>
+                    </a>
+                    <a href="#" class="social yt">
+                        <i class="i_youtube"></i>
+                    </a>
+                </div>
+                <div class="span2 offset5 copy">
+                    <p>2012 - Measure Template</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+</html>
