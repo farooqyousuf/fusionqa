@@ -464,7 +464,7 @@ input[type="color"]:focus,
 /* footer section */
 #footer {
 	background: url("footer_bg.jpg") 0 0 repeat;
-	min-height: 300px;
+	min-height: 75px;
 	margin-top: 100px;
 	color: #fff;
 	padding-top: 35px;

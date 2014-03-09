@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Measure Template - Features Page</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Measure Template</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/theme.css">
-    <link rel="stylesheet" type="text/css" href="css/external-pages.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -23,30 +22,26 @@
 	            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
           	</a>
-          	<a class="brand" href="/">
+          	<a class="brand scroller" data-section="body" href="/">
+                <!-- <img src="images/logo.png" alt="logo" /> -->
 				<%= image_tag "new_logo_3.png" %>
             </a>
 		  	<div class="nav-collapse collapse">
                 <ul class="nav pull-right">
 					<li><%= link_to 'About Us', page_path('about') %><li>					
-					<li><%= link_to 'Services', page_path('services') %><li>	
-					<li><%= link_to 'Blog', page_path('blog') %><li>					
-					<li><%= link_to 'Hire Us', page_path('hire') %><li>	
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            External Pages
+                            Services
                             <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="features.html">Features</a></li>
-                            <li><a href="pricing.html">Pricing</a></li>
-                            <li><a href="portfolio.html">Portfolio</a></li>
-                            <li><a href="coming-soon.html">Coming Soon</a></li>
-                            <li><a href="aboutus.html">About us</a></li>
-                            <li><a href="contact.html">Contact us</a></li>
-                            <li><a href="faq.html">FAQ</a></li>
+	   					<li><%= link_to 'Test Automation', page_path('automation') %><li>					
+	   					<li><%= link_to 'Training', page_path('training') %><li>
                         </ul>
                     </li>
+					<li><%= link_to 'FAQ', page_path('faq') %><li>					
+					<li><%= link_to 'Blog', page_path('blog') %><li>					
+					<li><%= link_to 'Hire Us', page_path('hire') %><li>					
                 </ul>
 	        </div>
         </div>
@@ -177,87 +172,87 @@
 
    
 
-    <!-- starts footer -->
-    <div id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="span8">
-                    <h3>From the Blog</h3>
-                    <div class="blog_post">
-                        <div class="row">
-                            <div class="span2">
-                                <a href="blog.html">
-                                    <img src="img/pic_blog.png" alt="post image" class="img-circle" />
-                                </a>
-                            </div>
-                            <div class="span4">
-                                <a href="blog.html" class="title">
-                                    Lorem Ipsum is simply dummy 
-                                </a>
-                                <div class="intro">
-                                    There are many variations of passages of Lorem alteration in some form by injected look even slightly believable.
-                                </div>
-                                <div class="date">
-                                    Oct 22. 2012
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="span4 contact_us">
-                    <h3>Contact Us</h3>
-                    <form class="form-horizontal">
-                        <div class="field">
-                            <div class="label_field">
-                                <label for="inputName">Name</label>
-                            </div>
-                            <input type="text" id="inputName" />
-                        </div>
+ <!-- starts footer -->
+ <div id="footer">
+     <div class="container">
+         <div class="row">
+             <!-- <div class="span8">
+                 <h3>From the Blog</h3>
+                 <div class="blog_post">
+                     <div class="row">
+                         <div class="span2">
+                             <a href="blog.html">
+                                 <img src="img/pic_blog.png" alt="post image" class="img-circle" />
+                             </a>
+                         </div>
+                         <div class="span4">
+                             <a href="blog.html" class="title">
+                                 Lorem Ipsum is simply dummy 
+                             </a>
+                             <div class="intro">
+                                 There are many variations of passages of Lorem alteration in some form by injected look even slightly believable.
+                             </div>
+                             <div class="date">
+                                 Oct 22. 2012
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div> -->
+             <!-- <div class="span4 contact_us">
+                 <h3>Contact Us</h3>
+                 <form class="form-horizontal">
+                     <div class="field">
+                         <div class="label_field">
+                             <label for="inputName">Name</label>
+                         </div>
+                         <input type="text" id="inputName" />
+                     </div>
 
-                        <div class="field">
-                            <div class="label_field">
-                                <label for="inputEmail">Email</label>
-                            </div>
-                            <input type="text" id="inputEmail" />
-                        </div>
+                     <div class="field">
+                         <div class="label_field">
+                             <label for="inputEmail">Email</label>
+                         </div>
+                         <input type="text" id="inputEmail" />
+                     </div>
 
-                        <div class="field">
-                            <div class="label_field">
-                                <label for="inputCity">City</label>
-                            </div>
-                            <input type="text" id="inputCity" />
-                        </div>
+                     <div class="field">
+                         <div class="label_field">
+                             <label for="inputCity">City</label>
+                         </div>
+                         <input type="text" id="inputCity" />
+                     </div>
 
-                        <div class="field">
-                            <div class="label_field">
-                                <label for="inputComment">Comments</label>
-                            </div>
-                            <textarea name="comments"></textarea>
-                        </div>
-                        <button type="submit" class="btn">Send</button>
-                    </form>
-                </div>
-            </div>
-            <hr>
-            <div class="row copyright">
-                <div class="span5">
-                    <h3>Social</h3>
-                    <a href="#" class="social fb">
-                        <i class="i_facebook"></i>
-                    </a>
-                    <a href="#" class="social tw">
-                        <i class="i_twitter"></i>
-                    </a>
-                    <a href="#" class="social yt">
-                        <i class="i_youtube"></i>
-                    </a>
-                </div>
-                <div class="span2 offset5 copy">
-                    <p>2012 - Measure Template</p>
-                </div>
-            </div>
-        </div>
-    </div>
+                     <div class="field">
+                         <div class="label_field">
+                             <label for="inputComment">Comments</label>
+                         </div>
+                         <textarea name="comments"></textarea>
+                     </div>
+                     <button type="submit" class="btn">Send</button>
+                 </form>
+             </div>
+         </div> -->
+         <!-- <hr> -->
+         <div class="row copyright">
+             <div class="span5">
+                 <h3>Social</h3>
+                 <a href="#" class="social fb">
+                     <i class="i_facebook"></i>
+                 </a>
+                 <a href="#" class="social tw">
+                     <i class="i_twitter"></i>
+                 </a>
+                 <a href="#" class="social yt">
+                     <i class="i_youtube"></i>
+                 </a>
+             </div>
+             <div class="span2 offset5 copy">
+                 <p>© 2014 FusionQA. All rights reserved.</p>
+             </div>
+         </div>
+     </div>
+ </div>
 
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/bootstrap.min.js"></script>
