@@ -39,8 +39,8 @@
 	   					<li><%= link_to 'Training', page_path('training') %><li>
                         </ul>
                     </li>
-					<li><%= link_to 'FAQ', page_path('faq') %><li>					
-					<li><%= link_to 'Blog', page_path('blog') %><li>					
+					<!-- <li><%= link_to 'FAQ', page_path('faq') %><li>					 -->
+					<li><%= link_to 'Blog', "http://www.farooqyousuf.net" %><li>					
 					<li><%= link_to 'Hire Us', page_path('hire') %><li>					
                 </ul>
 	        </div>
@@ -48,107 +48,193 @@
       </div>
     </div>
     <!-- ends navbar -->
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<!-- content here -->
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-    <!-- starts footer -->
-    <div id="footer">
+
+    <!-- features -->
+    <div id="about" class="about_page">
         <div class="container">
+            <!-- header -->
+            <h2 class="section_header">
+                <hr class="left visible-desktop">
+                <span>Training</span>
+                <hr class="right visible-desktop">
+            </h2>
+
             <div class="row">
-                <!-- <div class="span8">
-                    <h3>From the Blog</h3>
-                    <div class="blog_post">
-                        <div class="row">
-                            <div class="span2">
-                                <a href="blog.html">
-                                    <img src="img/pic_blog.png" alt="post image" class="img-circle" />
-                                </a>
-                            </div>
-                            <div class="span4">
-                                <a href="blog.html" class="title">
-                                    Lorem Ipsum is simply dummy 
-                                </a>
-                                <div class="intro">
-                                    There are many variations of passages of Lorem alteration in some form by injected look even slightly believable.
-                                </div>
-                                <div class="date">
-                                    Oct 22. 2012
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-                <!-- <div class="span4 contact_us">
-                    <h3>Contact Us</h3>
-                    <form class="form-horizontal">
-                        <div class="field">
-                            <div class="label_field">
-                                <label for="inputName">Name</label>
-                            </div>
-                            <input type="text" id="inputName" />
-                        </div>
-
-                        <div class="field">
-                            <div class="label_field">
-                                <label for="inputEmail">Email</label>
-                            </div>
-                            <input type="text" id="inputEmail" />
-                        </div>
-
-                        <div class="field">
-                            <div class="label_field">
-                                <label for="inputCity">City</label>
-                            </div>
-                            <input type="text" id="inputCity" />
-                        </div>
-
-                        <div class="field">
-                            <div class="label_field">
-                                <label for="inputComment">Comments</label>
-                            </div>
-                            <textarea name="comments"></textarea>
-                        </div>
-                        <button type="submit" class="btn">Send</button>
-                    </form>
-                </div>
-            </div> -->
-            <!-- <hr> -->
-            <div class="row copyright">
-                <div class="span5">
-                    <h3>Social</h3>
-                    <a href="#" class="social fb">
-                        <i class="i_facebook"></i>
-                    </a>
-                    <a href="#" class="social tw">
-                        <i class="i_twitter"></i>
-                    </a>
-                    <a href="#" class="social yt">
-                        <i class="i_youtube"></i>
-                    </a>
-                </div>
-                <div class="span2 offset5 copy">
-                    <p>© 2014 FusionQA. All rights reserved.</p>
+                <div class="span12">
+                    <h3 class="intro">
+							FusionQA offers full training to teams to help them learn how to automate their testing to make their testing efforts more efficient.
+					</h3>
                 </div>
             </div>
-        </div>
+			
+			<%= image_tag "training.jpg", :class => "training_pic" %>
+
+            <!-- description -->
+            <div class="row">
+                <div class="span12">
+					<p>We will provide your team with first class training in test automation using flexible and powerful technologies. FusionQA will work with your team to adjust to any environments, onsite, online or any other requirments you may have. We can help teach how to build an automation architecture from the groud-up or help fix implelemented solutions. We gurantee after our training your team will be able to automate testing quickly and easily. <%= link_to 'Contact us today for more information.', page_path('hire') %>
+</p>
+                </div>
+            </div>
+            <!-- header -->
+            <!-- <h2 class="section_header team">
+                <hr class="left visible-desktop">
+                <span>Experience</span>
+                <hr class="right visible-desktop">
+            </h2>
+
+            <div class="row">
+                <div class="span12">
+                    <h3 class="intro">
+                        Some of the awesome companies that we've helped in automation testing.
+                    </h3>
+                </div>
+            </div> -->
+
+            <!-- list -->
+            <!-- <div class="row_exp"> -->
+                <!-- <div class="span12"> -->
+                    <!-- <ul class="thumbnails">
+
+                      <li class="span3">
+                        <div class="thumbnail">
+                          <div class="pic">
+                            <a href="#"><%= image_tag "livingsocial.png", :class => "pic" %></a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="span3">
+                        <div class="thumbnail">
+                          <div class="pic">
+                            <a href="#"><%= image_tag "intridea.png", :class => "pic" %></a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="span3">
+                        <div class="thumbnail">
+                          <div class="pic">
+                            <a href="#"><%= image_tag "echo360.png", :class => "pic" %></a>
+                          </div>
+                        </div>
+                      </li>
+
+					</ul>
+				</div> -->
+
+				<!-- <div class="row_exp"> -->
+		        	<!-- <ul class="thumbnails">
+
+                      <li class="span3">
+                        <div class="thumbnail">
+                          <div class="pic">
+                            <a href="#"><%= image_tag "visualcv.png", :class => "pic" %></a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="span3">
+                        <div class="thumbnail">
+                          <div class="pic">
+                            <a href="#"><%= image_tag "mavtec.png", :class => "pic" %></a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="span3">
+                        <div class="thumbnail">
+                          <div class="pic">
+                            <a href="#"><%= image_tag "snacknmunch.png", :class => "pic" %></a>
+                          </div>
+                        </div>
+                      </li>
+
+                   </ul> -->
+            <!-- </div> -->
+	    <!-- </div> -->
     </div>
+
+ <!-- starts footer -->
+ <div id="footer">
+     <div class="container">
+         <div class="row">
+             <!-- <div class="span8">
+                 <h3>From the Blog</h3>
+                 <div class="blog_post">
+                     <div class="row">
+                         <div class="span2">
+                             <a href="blog.html">
+                                 <img src="img/pic_blog.png" alt="post image" class="img-circle" />
+                             </a>
+                         </div>
+                         <div class="span4">
+                             <a href="blog.html" class="title">
+                                 Lorem Ipsum is simply dummy 
+                             </a>
+                             <div class="intro">
+                                 There are many variations of passages of Lorem alteration in some form by injected look even slightly believable.
+                             </div>
+                             <div class="date">
+                                 Oct 22. 2012
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div> -->
+             <!-- <div class="span4 contact_us">
+                 <h3>Contact Us</h3>
+                 <form class="form-horizontal">
+                     <div class="field">
+                         <div class="label_field">
+                             <label for="inputName">Name</label>
+                         </div>
+                         <input type="text" id="inputName" />
+                     </div>
+
+                     <div class="field">
+                         <div class="label_field">
+                             <label for="inputEmail">Email</label>
+                         </div>
+                         <input type="text" id="inputEmail" />
+                     </div>
+
+                     <div class="field">
+                         <div class="label_field">
+                             <label for="inputCity">City</label>
+                         </div>
+                         <input type="text" id="inputCity" />
+                     </div>
+
+                     <div class="field">
+                         <div class="label_field">
+                             <label for="inputComment">Comments</label>
+                         </div>
+                         <textarea name="comments"></textarea>
+                     </div>
+                     <button type="submit" class="btn">Send</button>
+                 </form>
+             </div>
+         </div> -->
+         <!-- <hr> -->
+         <div class="row copyright">
+             <div class="span5">
+                 <h3>Social</h3>
+                 <a href="#" class="social fb">
+                     <i class="i_facebook"></i>
+                 </a>
+                 <a href="#" class="social tw">
+                     <i class="i_twitter"></i>
+                 </a>
+                 <a href="#" class="social yt">
+                     <i class="i_youtube"></i>
+                 </a>
+             </div>
+             <div class="span2 offset5 copy">
+                 <p>© 2014 FusionQA. All rights reserved.</p>
+             </div>
+         </div>
+     </div>
+ </div>
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+</html>
