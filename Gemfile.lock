@@ -40,6 +40,7 @@ GEM
     erubis (2.7.0)
     excon (0.38.0)
     execjs (2.0.2)
+    google-analytics-rails (0.0.6)
     heroku (3.9.1)
       heroku-api (~> 0.3.17)
       launchy (>= 0.3.2)
@@ -150,6 +151,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
+  google-analytics-rails
   heroku
   high_voltage
   jbuilder (~> 1.2)
